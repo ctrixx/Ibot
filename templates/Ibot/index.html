@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Uniuyo I-bot Interface</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="Chibuike Chris/" />
+<!-- css -->
+{% load static %}
+<link href="{% static 'Ibot/css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/fancybox/jquery.fancybox.css' %}" rel="stylesheet">
+<link href="{% static 'Ibot/css/flexslider.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/style.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/i-bot.css' %}" rel="stylesheet" />
+ 
+
+</head>
+<body>
+    <div id="wrapper">
+        <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="{% static 'Ibot/img/logo.png' %}" alt="logo"/></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li class="active"><a href="/help">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <section id="featured">
+
+        <!-- Slider -->
+            <div id="main-slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="{% static 'Ibot/img/slides/1.jpg' %}" alt="" />
+                    <div class="flex-caption">
+                        <h3>Quick Responses</h3>
+                        <p>Ibot is ready to answer your question immediately.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="{% static 'Ibot/img/slides/2.jpg' %}" alt="" />
+                    <div class="flex-caption">
+                        <h3>Simple UI</h3>
+                        <p>The User interface is simple and easy to work with. Check it out.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="{% static 'Ibot/img/slides/3.jpg' %}" alt="" />
+                    <div class="flex-caption">
+                        <h3>User Friendly</h3>
+                        <p>Get user friendly responses at all times.</p>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        <!-- end slider -->
+
+        </section>
+        <section class="callaction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="aligncenter"><h1 class="aligncenter"><span>I-BOT</span></h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;">
+
+                    </span>I-Bot (Information Bot) is an artificial-intelligent-based chatbot that provides you with information (about University of Uyo, Main Campus) in real time as responses to queries by the user. It uses a simple user interface to collect user's queries or question and provides appropriate responses with the ability to learn from users' queries and match similar queries.</div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="content">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="skill-home">
+                    <div class="skill-home-solid clearfix">
+                        <div class="col-md-3 text-center">
+                            <span class="icons c1"><i class="fa fa-book"></i></span>
+                            <div class="box-area">
+                                <h3>What?</h3> <p>Provides answers specific to entity-based queries (that contain the <span>'WHAT'</span> phrase).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c2"><i class="fa fa-globe"></i></span>
+                            <div class="box-area">
+                                <h3>Where?</h3> <p>Provides answers to location-based queries (that contain the <span>'WHERE'</span> phrase).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c3"><i class="fa fa-clock-o"></i></span>
+                            <div class="box-area">
+                                <h3>When?</h3> <p>Provides answers to time-based queries (that contain the <span>'WHEN'</span> phrase).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c3"><i class="fa fa-gear"></i></span>
+                                <div class="box-area">
+                                    <h3>How?</h3> <p>Provides answers to process-based queries (that contain the <span>'HOW'</span> phrase).</p>
+                                </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="icons c4"><i class="fa fa-user"></i></span>
+                            <div class="box-area">
+                                <h3>Who?</h3> <p>Provides answers to person-based queries (that contain the <span>'WHO'</span> phrase).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+        <div id="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>
+                                <span>&copy; I-bot 2019 All right reserved. By </span>Chris
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+
+<a href="#!" class="i-bot">
+	<i class="fa fa-comments"></i>
+	<p>Let I-Bot help you out.</p>
+</a>
+<div class="mini-chat">
+	<div class="head">
+		<div class="info-box">
+			<p>Get information about University of Uyo. Ask your questions and I-bot will answer them.</p>
+		</div>
+		<i class="fa fa-info-circle bot-info" id="bot-info"></i>
+		<i class="fa fa-laptop full-screen-page"></i>
+		<p>I-Bot</p>
+		<i class="fa fa-times-circle close-chat"></i>
+	</div>
+	<div class="chat-content">
+<!--		<div class="msg-cont">
+			<div class="bot-msg">
+				<p> Hi There! What would you like to find out today?</p>
+			</div>
+		</div> -->
+	<!--	<div class="msg-cont">
+			<div class="user-msg">
+				<p> Where can i find the registrar's office?</p>
+			</div>
+
+		</div>
+		<div class="msg-cont">
+			<div class="bot-msg">
+				<p> It is located at the Y-building in Engineering Faculty, Uniuyo Permanent Site</p>
+			</div>
+			<div class="msg-options">
+				<i class="fa fa-picture-o"></i>
+				<i class="fa fa-warning"></i>
+			</div>
+		</div> -->
+	</div>
+	<div class="message-box">
+		<input type="text" placeholder="Type your question here" name="query">
+		<i class="fa fa-arrow-right submit"></i>
+	</div>
+</div>
+<!-- <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a> -->
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'Ibot/js/i-bot-plugin.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'Ibot/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'Ibot/js/portfolio/jquery.quicksand.js' %}"></script>
+<script src="{% static 'Ibot/js/portfolio/setting.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.flexslider.js' %}"></script>
+<script src="{% static 'Ibot/js/animate.js' %}"></script>
+<script src="{% static 'Ibot/js/custom.js' %}"></script>
+
+</body>
+
+
+</html>

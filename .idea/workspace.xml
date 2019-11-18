@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="daedf8d2-361b-4006-8b2e-cfe72536ed2a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1P3H2Tn09UydJAsuiHhkyO06UJG" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ibot/settings.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Ibot" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Ibot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Ibot.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="3124" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daedf8d2-361b-4006-8b2e-cfe72536ed2a" name="Default Changelist" comment="" />
+      <created>1565095653115</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565095653115</updated>
+      <workItem from="1565095676701" duration="1319000" />
+      <workItem from="1565142034287" duration="184000" />
+      <workItem from="1565223209302" duration="619000" />
+      <workItem from="1565285886831" duration="2065000" />
+      <workItem from="1565303981952" duration="499000" />
+      <workItem from="1565319340998" duration="1472000" />
+      <workItem from="1565323626178" duration="860000" />
+      <workItem from="1565396869102" duration="948000" />
+      <workItem from="1565408275697" duration="1993000" />
+      <workItem from="1566106568757" duration="593000" />
+      <workItem from="1566108401813" duration="473000" />
+      <workItem from="1566110475261" duration="1680000" />
+      <workItem from="1566168379176" duration="6662000" />
+      <workItem from="1566175719104" duration="6181000" />
+      <workItem from="1566259937860" duration="4259000" />
+      <workItem from="1567260895164" duration="633000" />
+      <workItem from="1567703503059" duration="86000" />
+      <workItem from="1568195553038" duration="1316000" />
+      <workItem from="1568199476627" duration="678000" />
+      <workItem from="1568201157968" duration="89000" />
+      <workItem from="1568279558255" duration="3501000" />
+      <workItem from="1568283170464" duration="1068000" />
+      <workItem from="1568488243273" duration="1583000" />
+      <workItem from="1568715397521" duration="483000" />
+      <workItem from="1568819634995" duration="12000" />
+      <workItem from="1572617098079" duration="1315000" />
+      <workItem from="1573953014391" duration="7075000" />
+      <workItem from="1574038969005" duration="3600000" />
+      <workItem from="1574058494986" duration="519000" />
+      <workItem from="1574060972647" duration="3371000" />
+      <workItem from="1574074548811" duration="1309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

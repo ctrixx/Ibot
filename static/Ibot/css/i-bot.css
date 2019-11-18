@@ -1,0 +1,373 @@
+.i-bot{
+    width:20%;
+    height: 40px;
+    background-color: limegreen;
+    position:fixed;
+    bottom:3px;
+    right:5px;
+    z-index: 40;
+    text-decoration: none;
+    cursor: pointer;
+}
+.i-bot:hover{
+    background-color: green;
+}
+
+.i-bot i{
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+    float: left;
+}
+.i-bot p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    float: left;
+    margin: 4% 0px 0px 4%;
+}
+.i-bot:hover{
+    text-decoration: none;
+}
+.mini-chat{
+    width: 20%;
+    height: 350px;
+    background-color: white;
+    opacity: 0;
+    position: fixed;
+    bottom:2px;
+    right: 5px;
+    z-index: 30;
+    border: 1px solid silver;
+    border-radius: 15px 15px 4px 4px;
+    display:none;
+}
+.mini-chat .head{
+    width: 100%;
+    height: 30px;
+    background-color: limegreen;
+    color: white;
+    font-size:20px;
+    padding: 5px 2px;
+    border-radius: 14px 14px 0px 0px;
+}
+.mini-chat .head p{
+    display: inline;
+    margin-left: 22%;
+    margin-right: 32%;
+}
+.mini-chat .head i, .mini-chat .head a i{
+    cursor: pointer;
+} 
+.mini-chat .head .info-box{
+    width: 60%;
+    height:20%;
+    background-color: white;
+    position: absolute;
+    z-index: 40;
+    border: 1px solid limegreen;
+    border-radius: 15px;
+    left:20px;
+    display: none;
+    opacity: 0;
+}
+.mini-chat .head .info-box p{
+    color: grey;
+    display: block !important;
+    font-size: 10px;
+    margin: 2px 2px 2px 10px !important;
+    line-height: 15px;
+}
+.message-box{
+    width: 100%;
+    height: 35px;
+    border-top: 1px silver solid;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 1px;
+    margin: 0px 0px 0px 0px;
+    right: 0px;
+}
+.message-box i{
+    color: limegreen;
+}
+.message-box input{
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    font-size: 15px;
+    margin-left:5px;
+    margin-top:2px;
+    padding: 0px 0px 0px 5px;
+    border:1px white solid;
+    border-radius:8px; 
+    color: black;
+}
+.submit{
+    cursor: pointer;
+}
+.chat-content{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.msg-cont{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.bot-msg{
+    width: 70%;
+    height: auto;
+    background-color:#fafafa;
+    border: 1px solid silver;
+    border-radius: 30px 10px 10px 30px;
+    margin:0px 0px 10px 6px;
+    padding:3px 5px 3px 15px;
+    float: left;
+    line-height: 16px;
+}
+.user-msg{
+    width: 70%;
+    height: auto;
+    background-color:#fafafa;
+    border: 1px solid silver;
+    border-radius: 10px 30px 30px 10px;
+    margin:0px 6px 10px 0px;
+    padding:3px 0px 3px 15px;
+    float: right;
+    line-height: 16px;
+}
+.msg-options{
+    width: 25%;
+    height: auto;
+    float: left;
+    color: limegreen;
+    margin-top:6%;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.bot-msg p{
+    color: forestgreen;
+    font-size: 13px;
+    margin:0px 0px 0px 0px !important;
+}
+.user-msg p{
+    color: grey;
+    font-size: 13px;
+    margin:0px 0px 0px 0px !important;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+/* Styling for full screen chat page */
+
+
+.full-chat-box{
+    margin: auto;
+    background-color: whitesmoke;
+    height: 80vh;
+    padding: 0 0 0 0;
+}
+.full-chat-box .head{
+    width: 100%;
+    height: 50px;
+    background-color: limegreen;
+    color: white;
+    font-size:30px;
+    padding: 5px 2px;
+
+}
+.full-chat-box .head p{
+    display: inline;
+    text-align: center;
+    margin-left: 43%;
+}
+.full-chat-box .head .close-chat{
+    position: absolute;
+    right: 10px;
+}
+.full-chat-box .head i, .full-chat-box .head a i{
+    cursor: pointer;
+} 
+.full-chat-box .head .info-box{
+    width: 25%;
+    height:15%;
+    background-color: white;
+    position: absolute;
+    left:20px;
+    z-index: 40;
+    border: 1px solid limegreen;
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
+    display: none;
+    opacity: 0;
+}
+.full-chat-box .head .info-box p{
+    color: grey;
+    display: block !important;
+    font-size: 12px;
+    margin: 2px 2px 2px 10px !important;
+    line-height: 15px;
+}
+.full-chat-box .message-box{
+    width: 100%;
+    height: 40px;
+    border-top: 1px silver solid;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 1px;
+    margin: 0px 0px 0px 0px;
+    right: 0px;
+}
+.full-chat-box .message-box i{
+    margin-top: 4px;
+    font-size: 25px;
+    color: limegreen;
+}
+.full-chat-box .message-box input{
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    font-size: 15px;
+    margin-left:5px;
+    margin-top:0px;
+    padding: 0px 0px 0px 5px;
+    border:1px white solid;
+    border-radius:8px; 
+    color: black;
+}
+.full-chat-box .chat-content{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+.full-chat-box .chat-content .msg-cont{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.full-chat-box .chat-content .msg-cont .bot-msg{
+    width: 70%;
+    height: auto;
+    min-height: 50px;
+    background-color:#fafafa;
+    border: 1px solid silver;
+    border-radius: 30px 10px 10px 30px;
+    margin:0px 0px 10px 6px;
+    padding:10px 5px 3px 15px;
+    float: left;
+    line-height: 16px;
+}
+.full-chat-box .chat-content .msg-cont .user-msg{
+    width: 70%;
+    height: auto;
+    min-height: 50px;
+    background-color:#fafafa;
+    border: 1px solid silver;
+    border-radius: 10px 30px 30px 10px;
+    margin:0px 6px 10px 0px;
+    padding:10px 0px 3px 15px;
+    float: right;
+    line-height: 16px;
+}
+.full-chat-box .chat-content .msg-cont .msg-options{
+    width: 25%;
+    height: auto;
+    float: left;
+    color: limegreen;
+    margin-top:1.5%;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.bot-msg p{
+    color: forestgreen;
+    font-size: 15px;
+    margin:0px 0px 0px 0px !important;
+}
+.user-msg p{
+    color: grey;
+    font-size: 15px;
+    margin:0px 0px 0px 0px !important;
+}
+
+
+/* Media Queries for responsiveness*/
+
+@media only screen and (max-width:1360px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 22%;
+    margin-right: 28%;
+}
+}
+
+@media only screen and (max-width:1200px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 23%;
+    margin-right: 25%;
+}
+.i-bot{
+    width:25%;
+}
+.mini-chat{
+    width: 23%;
+}
+}
+
+@media only screen and (max-width:1024px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 23%;
+    margin-right: 24%;
+}
+.i-bot{
+    width:25%;
+}
+.mini-chat{
+    width: 25%;
+}
+}
+
+@media only screen and (max-width:900px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 23%;
+    margin-right: 26%;
+}
+.i-bot{
+    width:30%;
+}
+.mini-chat{
+    width: 30%;
+}
+}
+@media only screen and (max-width:768px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 23%;
+    margin-right: 27%;
+}
+.i-bot{
+    width:34%;
+}
+.mini-chat{
+    width: 34%;
+}
+}
+
+@media only screen and (max-width:700px){
+.mini-chat .head p{
+    display: inline;
+    margin-left: 23%;
+    margin-right: 26%;
+}
+.i-bot{
+    width:36%;
+}
+.mini-chat{
+    width: 36%;
+}
+}

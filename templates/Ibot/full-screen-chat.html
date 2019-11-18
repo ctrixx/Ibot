@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<title>Uniuyo I-bot Chat Interface</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="Chibuike Chris" />
+
+{% load static %}
+<link href="{% static 'Ibot/css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/fancybox/jquery.fancybox.css' %}" rel="stylesheet">
+<link href="{% static 'Ibot/css/flexslider.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/style.css' %}" rel="stylesheet" />
+<link href="{% static 'Ibot/css/i-bot.css' %}" rel="stylesheet" />
+
+
+<style>
+    header .navbar{
+        padding: 0px 0;
+    }
+    #content{
+        padding: 25px 0 0px 0;
+    }
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+
+	<!-- start header -->
+		<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  <a class="navbar-brand" href="/index"><img src="{% static 'Ibot/img/logo.png' %}" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li class="active"><a href="/help">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header><!-- end header -->
+	<section id="content">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-11 full-chat-box" >
+                        	<div class="head">
+                                <div class="info-box">
+                                    <p>Get information about University of Uyo. Ask your questions and I-bot will answer them.</p>
+                                </div>
+                                <i class="fa fa-info-circle bot-info"></i>
+                                <p>I-Bot</p>
+                            <div>
+                            <div class="chat-content">
+                                <!-- Chat Content Goes Here -->
+
+                            </div>
+                            <div class="message-box">
+                                <input type="text" placeholder="Type your question here" name="query">
+                                <i class="fa fa-arrow-right submit"></i>
+                            </div>
+                    </div>
+                </div>
+        </div>
+	</section>
+
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'Ibot/js/i-bot-plugin.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'Ibot/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'Ibot/js/portfolio/jquery.quicksand.js' %}"></script>
+<script src="{% static 'Ibot/js/portfolio/setting.js' %}"></script>
+<script src="{% static 'Ibot/js/jquery.flexslider.js' %}"></script>
+<script src="{% static 'Ibot/js/animate.js' %}"></script>
+<script src="{% static 'Ibot/js/custom.js' %}"></script>
+
+</body>
+
+
+</html>
