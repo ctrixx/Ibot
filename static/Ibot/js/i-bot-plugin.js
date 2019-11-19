@@ -22,12 +22,24 @@
 
 
 //Ajax function to submit query and get response
-function poster(query){
-    $.get('/submit/?query='+query,function(data,status){
+function poster(query,follow){
+    $.get('/submit/?query='+query+'&follow='+follow,function(data,status){
         response_data = JSON.parse(data);
         response_string = response_data["response_string"];
         response_attachment = response_data["response_attachment"];
-        chatContent.appendChild(messageBox('bot-msg',response_string,response_attachment))
+        response_follow = response_data["follow_up"];
+        try {
+            document.getElementsByClassName('follow-up')[0].className="msg-cont";
+        }
+        catch(err){
+            var nott = 0;
+        }
+        var msgbox = messageBox('bot-msg',response_string,response_attachment);
+        if(response_follow!="None"){
+            msgbox.className= msgbox.className+" follow-up";
+            msgbox.setAttribute("data-follow",response_follow);
+        }
+        chatContent.appendChild(msgbox)
         setTimeout(function () {
             chatContent.scrollTop = chatContent.scrollHeight;
         },100)
@@ -52,7 +64,16 @@ function submit(){
     }
     if(queryError==0){
         chatContent.appendChild(messageBox('user-msg',userQuery,0));
-        poster(userQuery);
+
+        try{
+            var fup = document.getElementsByClassName('follow-up')[0];
+            var follow = fup.getAttribute('data-follow');
+        }
+        catch(err){
+            var follow = "";
+        }
+
+        poster(userQuery,follow);
         queryInput.value = "";
     }
     //Restore query input to default

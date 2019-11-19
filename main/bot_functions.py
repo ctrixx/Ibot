@@ -147,9 +147,10 @@ def remove_unwanted(listt):
 # Function to check the database for query match, calculate mach score and response
 
 
-def check_question_database(query,raw_input):
+def check_question_database(query,raw_input,follow):
     all_questions = Questions.objects.all()
-
+    if follow != []:
+        query = query + follow
     # Initialize all scores and all responses for Zero (No id present for zero)
     all_responses = [0]
     all_scores = [0]
@@ -213,14 +214,14 @@ def check_question_database(query,raw_input):
             response_data = {}
             response_data["response_string"] = all_questions[fuzzymatchid].FuzzyResponse
             response_data["response_attachment"] = 0
-            response_data["follow-up"] = query
+            response_data["follow_up"] =raw_input
             return json.dumps(response_data)
 
         else:
             response_data={}
             response_data["response_string"] = "I'm not quite sure of what you are asking. Please be more specific."
             response_data["response_attachment"] = 0
-            response_data["follow-up"] = "None"
+            response_data["follow_up"] = "None"
             return json.dumps(response_data)
 
     elif total_responses < 1:
@@ -244,7 +245,7 @@ def check_question_database(query,raw_input):
             response_data = {}
             response_data["response_string"] = all_questions[fuzzymatchid].FuzzyResponse
             response_data["response_attachment"] = 0
-            response_data["follow-up"]=query
+            response_data["follow_up"]=raw_input
             return json.dumps(response_data)
 
         else:
@@ -255,7 +256,7 @@ def check_question_database(query,raw_input):
                 else:
                     response_data["response_string"] = "Sorry, I don't have the answer to that question. Try rephrasing it, maybe I'll understand better."
                 response_data["response_attachment"] = 0
-                response_data["follow-up"] = "None"
+                response_data["follow_up"] = "None"
                 return json.dumps(response_data)
 
     else:
@@ -264,7 +265,7 @@ def check_question_database(query,raw_input):
         response_data={}
         response_data["response_string"] = all_responses[vrid[0]]
         response_data["response_attachment"] = attachments[vrid[0]]
-        response_data["follow-up"] = "None"
+        response_data["follow_up"] = "None"
 
         # Using the json.dumps function to convert to javascript readable object
         return json.dumps(response_data)
